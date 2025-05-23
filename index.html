@@ -6,12 +6,9 @@
     <link rel="icon" href="./new_images/ico.jpg" type="image/x-icon" />
     <title>MARAZOME | HOME</title>
     <!-- -------google font------- -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Cal+Sans&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 
     <link
       rel="stylesheet"
@@ -188,26 +185,6 @@
           </li>
         </ul>
       </div>
-      <div class="content-area">
-        <div class="row">
-          <div class="col-6">
-            <div class="cardz">
-              <img src="./new_images/add5.jpg" alt="Achievement" />
-              <span>Achievements</span>
-              <h4>Our Success</h4>
-              <p>Celebrating milestones and recognition...</p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="cardz">
-              <img src="./new_images/add5.jpg" alt="Achievement" />
-              <span>Achievements</span>
-              <h4>Our Success</h4>
-              <p>Celebrating milestones and recognition...</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- ========Navbar End======= -->
 
@@ -259,13 +236,15 @@
               <source src="./new_images/banner1.mp4" type="video/mp4">
             </video>
           </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <video preload="auto" autoplay muted loop>
+              <source src="./new_images/aboutus_banner.mp4" type="video/mp4" />
+            </video>            
+          </div>          
           <div class="carousel-item" data-bs-interval="8000">
             <video loop muted autoplay>
               <source src="./new_images/banner3.mp4" type="video/mp4">
             </video>
-          </div>          
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="./new_images/banner2.png" class="d-block w-100" alt="..." />
           </div>
         </div>
         <button
@@ -369,33 +348,8 @@
         </div>
         <div class="row" data-aos="fade-up" data-aos-duration="1000">
           <div class="col-md-4">
-            <!-- <div class="cardz_2">
-              <div class="cardz_1">
-                <img src="./new_images/add4.JPG" alt="" />
-                <div class="content">
-                  <h2>MArazome creative studios</h2>
-                  <hr />
-                  <p>
-                    transfering idea into visually stunning & impactful content
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="cardz_2">
-              <div class="cardz_1">
-                <img src="./new_images/add5.jpg" alt="" />
-                <div class="content">
-                  <h2>MArazome creative studios</h2>
-                  <hr />
-                  <p>
-                    transfering idea into visually stunning & impactful content
-                  </p>
-                </div>
-              </div>
-            </div> -->
-          
              <div class="cardz_1">
-              <img src="./new_images/add7.JPG" alt="" />
+              <img src="./new_images/add7.JPG" alt="" style="object-position:top"/>
               <div class="content">
                 <h1>MArazome creative studios</h1>
                 <hr />
@@ -640,7 +594,7 @@
       window.addEventListener('load', () => {
         setTimeout(() => {
           document.body.classList.remove('disable-scroll');
-        }, 4500);
+        }, 3000);
       });
 
       TweenMax.staggerFrom(".loaderz", 1.5, {
@@ -651,18 +605,13 @@
       TweenMax.staggerTo(".loaderz", 1.5, {
         display: "none",
         ease: Power1.easeIn,
-        delay: 6
+        delay: 5
       }, 0.05);
       TweenMax.staggerFrom(".loaderz .content img", 0.8, {
         top: "50px",
         ease: Power1.easeIn,
         delay: 0.5
       }, 0.1);
-      // TweenMax.staggerFrom(".loaderz .contentz img", 0.8, {
-      //   top: "50px",
-      //   ease: Power1.easeIn,
-      //   delay: 1
-      // }, 0.15);
       TweenMax.staggerTo(".loaderz .content img", 0.8, {
         top: "-50px",
         ease: Power1.easeIn,
